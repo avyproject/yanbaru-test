@@ -25,16 +25,16 @@
   <script>
     var buildUrl = "Build";
     var config = {
-      dataUrl: buildUrl + "/Web.data",
-      frameworkUrl: buildUrl + "/Web.framework.js",
-      codeUrl: buildUrl + "/Web.wasm",
+      dataUrl: buildUrl + "/Web.data?v=202611190115",
+      frameworkUrl: buildUrl + "/Web.framework.js?v=202611190115",
+      codeUrl: buildUrl + "/Web.wasm?v=202611190115",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "YanbaruQuest",
-      productVersion: "0.1.0",
+      productVersion: "202611190115",
     };
     var script = document.createElement("script");
-    script.src = buildUrl + "/Web.loader.js";
+    script.src = buildUrl + "/Web.loader.js?v=202611190115";
     script.onload = function () {
       createUnityInstance(document.querySelector("#unity-canvas"), config, function (p) {
         document.getElementById("fill").style.width = (p * 100) + "%";
